@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 태그 예습</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        thead{
+            background-color: #f5f5f5;
+            border-bottom: 2px solid#ddd;
+        }
+
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            padding: 12px;
+        }
+
+        th, td {
+            border: 1px solid#ccc;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <table> : 표 전체
+        <tr> : 표의 행 (가로 한 줄)
+        <td> : 일반 셀(데이터)
+        <th> : 헤더 셀(제목 셀, 굵게 + 가운데 정렬 기본) -->
+
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>직업</th>
+        </tr>
+        <tr>
+            <td>김다은</td>
+            <td>30</td>
+            <td>디자이너</td>
+        </tr>
+    </table>   
+
+    <table>
+        <thead>
+            <tr>
+            <tr>상품명</tr>
+            <tr>가격</tr>
+            <tr>수량</tr>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>커피</td>
+                <td>3000원</td>
+                <td>10개</td>
+            </tr>
+            <tr>
+                <td>쿠키</td>
+                <td>1500원</td>
+                <td>20개</td>
+            </tr>
+            <tr>
+                <td>아이스크림</td>
+                <td>700원</td>
+                <td>15개</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">총 2개의 상품이 있습니다.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
