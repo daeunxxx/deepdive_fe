@@ -7,12 +7,116 @@
     <link rel="stylesheet" href="./css/reset.css">
     <style>
         body {
-        background-color: #f3f3f3;
         font-family: 'poppins', sans-serif;
-        margin: 20px;
+        font-size: 20px;
+        margin: 0px;
         padding: 20px;
 
     }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    .more-btn {
+        font-size: 14px;
+        font-weight: 400;
+        color: #666;
+    }
+
+
+
+    .container h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .goods-list {
+        margin-top: 12px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .goods-card .goods-img{
+        display: block;
+        background: #fff;
+        border: 1px solid #b4b4b4;
+        border-radius: 4px;
+        overflow: hidden;
+        width: 194px;
+        height: 194px;
+        color: #222;
+    }
+
+
+    .goods-name {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 14px 0px 18px;
+
+    }
+
+    .artist-name {
+        font-size: 14px;
+        font-weight: 400;
+        color: #666;
+
+    }
+
+    .goods-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+
+    .banner {
+        display: flex;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    .card {
+        flex: 1;
+        background-color: rgb(237, 234, 204);
+        color: #222;
+        padding: 20px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+
+
+    .link {
+        font-size: 16px;
+        font-weight: 400;
+        color: #757575;
+        margin-top: 4px;
+
+    }
+
+    .card span {
+        font-size: 32px;
+        
+    }
+
+
+
+
 
 
     </style>
@@ -23,13 +127,19 @@
     <h1><a href="#">OGQ마켓</a></h1>
 
     <section class="container">
-        <h2>인기 굿-즈</h2>
+        <div class="section-header">
+            <h2>인기 굿-즈</h2>
+            <a href="#" class="more-btn">더보기 ></a>
+
+        </div>
+
+
         <ul class="goods-list">
             <li class="goods-card">
-                <a href="#" class="goods-link">
-
                     <div class="goods-img">
-                        <img src="./images/bg_stars.png" alt="img">
+                        <a href="#">
+                            <img src="./images/03_2.svg" alt="img">
+                        </a>
                     </div>
 
                     <div class="goods-name">
@@ -39,7 +149,7 @@
                         블루 아카이브 티파티 엔틱...
                         </a>
 
-                        <p class="price"><strong>29,700</strong> 원</p>
+                        <p class="price"><span>29,700</span> 원</p> 
                     </div>
                 </a>
             </li>
@@ -47,6 +157,17 @@
         </ul>
 
 
+    </section>
+
+    <section class="banner">
+
+        <div class="card">
+            <div class="card-text">
+                <strong>무료 스티커 모음집</strong>
+            </div>
+            <a href="#" class="link">></a>
+            <span aria-hidden="true">🥰</span>
+        </div>
     </section>
     
 </body>

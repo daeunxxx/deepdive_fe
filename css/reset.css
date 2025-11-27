@@ -46,3 +46,6 @@ img{
     i, em {
         font-style: inherit;
     }
+
+
+    ul, ol { list-style:none }
