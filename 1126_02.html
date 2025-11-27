@@ -84,9 +84,6 @@
         display: flex;
         gap: 16px;
         margin-top: 40px;
-    }
-
-    .card {
         flex: 1;
         background-color: rgb(237, 234, 204);
         color: #222;
@@ -97,8 +94,27 @@
         justify-content: space-between;
         font-size: 16px;
         font-weight: 700;
-
     }
+
+
+    .banner span {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.banner span::after {
+  content: "";
+  background: url("./images/arrow_r.svg") no-repeat center center;
+  width: 14px;
+  height: 14px;
+}
+
+.banner a:first-child {
+  background-color: #faf7e1;
+  background-image: url("./images/irangi_9.png");
+}
+
+
 
 
     .link {
@@ -149,7 +165,9 @@
                         블루 아카이브 티파티 엔틱...
                         </a>
 
-                        <p class="price"><span>29,700</span> 원</p> 
+                        <p class="price">
+                            <strong>29,700</strong><em>원</em>
+                        </p> 
                     </div>
                 </a>
             </li>
@@ -160,14 +178,10 @@
     </section>
 
     <section class="banner">
-
-        <div class="card">
-            <div class="card-text">
-                <strong>무료 스티커 모음집</strong>
-            </div>
-            <a href="#" class="link">></a>
-            <span aria-hidden="true">🥰</span>
-        </div>
+        <a href="#">
+            <span>무료 스티커 모음집</span>
+        </a>
+        
     </section>
     
 </body>

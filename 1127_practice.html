@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi market</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: #fff;
+            box-shadow: 0 4px 25px rgba(0 ,0 ,0 ,0.04);
+            z-index: 1000;
+
+        }
+
+        .header .inner {
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 24px;
+            font-weight: 900;
+            color: #f26fa6;
+        }
+
+        .logo .logo-icon {
+            width: 32px;
+            height: 32px;
+            display: block;
+
+        }
+
+        .search-bar{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 380px;
+            height: 48px;
+            background-color: #fafafa;
+            border-radius: 50px;
+            border: 1px solid #bbbbbb;
+            padding: 0 18px 0 20px;
+            gap: 8px;
+
+        }
+
+        .search-bar .search-icon {
+            position: absolute;
+            right: 18px;
+            width: 18px;
+            height: 18px;
+            opacity: 0.7;
+
+        }
+
+        .search-bar input {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .gnb {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .gnb a.active {
+            color: #ff6f93;
+            font-weight: 600;
+        }
+
+
+        .btn-login {
+            padding: 8px 18px;
+            background-color: rgb(129, 221, 191);
+            border-radius: 20px;
+            color: #fff;
+
+        }
+
+        .visual {
+            padding-top: 120px;
+            padding-bottom: 80px;
+            background: linear-gradient(90deg, rgba(252, 227, 252, 1) 0%, rgba(247, 240, 250, 1) 50%, rgba(201, 225, 255, 1) 100%);
+        }
+
+        .visual-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .visual-text h2 {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 48px;
+            color: #363636;
+            margin-bottom: 20px;
+        }
+        .visual-text p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: rgb(110, 109, 109);
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: pink;
+            color: #fff;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 0 1px 20px rgba(0, 0, 0, 0.09);
+        }
+
+        .visual-img {
+            width: 380px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0 ,0 ,0 ,0.09);
+
+        }
+
+        .visual-img img {
+            width: 100%;
+            display: block;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images 2/cat.svg" class="logo-icon" alt="로고">
+                        Mochi Market
+                    </a>
+                </h1>
+
+                <div class="search-bar">
+                    <img src="./images 2/Search.svg" class="search-icon" alt="검색">
+                    <input type="text" placeholder="귀여운 이모티콘을 찾아보세요!">
+                </div>
+
+            <nav class="gnb">
+                <a href="#" class="active">홈</a>
+                <a href="#">인기</a>
+                <a href="#">신규</a>
+                <a href="#" class="btn-login">로그인</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="visual">
+        <div class="visual-section">
+            <div class="visual-text">
+                <h2>당신의 대화를<br>
+                    더 귀엽게 만들어보세요!</h2>
+                <p>매일매일 새로운 작가님들의<br>
+                반짝이는 아이디어를 만나보세요.</p>
+
+                <a href="#" class="btn">인기 이모티콘 보러가기</a>
+            </div>
+
+            <div class="visual-img">
+                <img src="./images 2/bunny.svg" alt="메인이미지"/>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
