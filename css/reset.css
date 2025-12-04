@@ -27,6 +27,8 @@ img{
         border: none;
         background-color: transparent; /* 투명 */
         cursor: pointer;
+        color: inherit;
+        
     }
     
     a{
