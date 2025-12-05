@@ -28,6 +28,7 @@ img{
         background-color: transparent; /* 투명 */
         cursor: pointer;
         color: inherit;
+        font-family: inherit;
         
     }
     
